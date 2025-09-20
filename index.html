@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bark47 — Season 1</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Bark47 Season 1 — locked site with timer, quest and Telegram login." />
+</head>
+<body>
+  <div id="app">
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="assets/mascot.jpg" alt="$BARK47" class="logo-img" />
+          <span class="logo-text">BARK47</span>
+        </div>
+      </div>
+      <div class="nav-center">
+        <span class="slogan">Make Memecoins Great Again</span>
+      </div>
+      <div class="nav-right">
+        <a class="pill" href="#" title="Скоро">BUY</a>
+        <div id="tgUser" class="user hidden">
+          <img class="avatar" id="avatar" alt="avatar"/>
+          <a class="uname" id="uname" target="_blank" rel="noreferrer"></a>
+          <button id="logout" class="logout" title="Выйти">×</button>
+        </div>
+        <div id="tgLogin" class="tg-login"></div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <h1 class="season">SEASON 1</h1>
+        <div class="timer" id="timer">00:00:00</div>
+        <div class="subtitle" id="subtitle" tabindex="0">попробуй запустить таймер</div>
+        <div class="progress-wrap">
+          <span id="keysLabel" class="keys">Keys: 0/2</span>
+          <div class="bar"><div id="barFill" class="fill" style="width:0%"></div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <article class="card locked" data-tooltip="Запусти Season 1, чтобы войти.">
+        <div class="card-hd"><div class="emj">🐶</div><h3>Dog House</h3></div>
+        <p>Дом Барка: арты, вайб, мемы.</p>
+      </article>
+      <article class="card locked" data-tooltip="Запусти Season 1, чтобы войти.">
+        <div class="card-hd"><div class="emj">📈</div><h3>Barkonomics</h3></div>
+        <p>Токеномика без воды.</p>
+      </article>
+      <article class="card locked" data-tooltip="Запусти Season 1, чтобы войти.">
+        <div class="card-hd"><div class="emj">🚩</div><h3>Rally HQ</h3></div>
+        <p>Штаб рейдов и заданий.</p>
+      </article>
+      <article class="card locked" data-tooltip="Запусти Season 1, чтобы войти.">
+        <div class="card-hd"><div class="emj">🛡️</div><h3>Old Guard</h3></div>
+        <p>Зал олдов: роли, значки.</p>
+      </article>
+    </main>
+
+    <footer class="foot">
+      <div class="copy">© Bark47 — Season 1</div>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>
+    window.__BARK_TG__ = {
+      BOT_USERNAME: "BARK47_Bot",
+      BOT_TOKEN: "8413295084:AAEA2GCMHirMS5bXGO3LI3Ss3Q10BiBAsYg"
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
